@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Laxman</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="icon" href="https://raw.githubusercontent.com/lax-2020com69/Home/refs/heads/main/Home/luxury-letter-l-logo-l-logotype-for-elegant-and-stylish-fashion-symbol-vector.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	
+	<style>
+		.theme-toggle {
+		  position: fixed;
+		  top: 15px;
+		  right: 15px;
+		  z-index: 10000;
+		  display: flex;
+		  align-items: center;
+		}
+
+		/* Hide native checkbox */
+		.theme-toggle input[type="checkbox"] {
+		  display: none;
+		}
+
+		/* Custom switch styling */
+		.switch-label {
+		  display: inline-block;
+		  width: 50px;
+		  height: 26px;
+		  background-color: #ccc;
+		  border-radius: 50px;
+		  position: relative;
+		  cursor: pointer;
+		  transition: background-color 0.3s ease;
+		}
+
+		.switch-slider {
+		  position: absolute;
+		  top: 3px;
+		  left: 3px;
+		  width: 20px;
+		  height: 20px;
+		  background-color: #fff;
+		  border-radius: 50%;
+		  transition: transform 0.3s ease;
+		}
+
+		/* Checked state */
+		input[type="checkbox"]:checked + .switch-label {
+		  background-color: #4caf50;
+		}
+
+		input[type="checkbox"]:checked + .switch-label .switch-slider {
+		  transform: translateX(24px);
+		}
+
+		/* Dark theme overrides */
+		body.dark-theme {
+			background-color: #121212;
+			color: #f4f4f4;
+		}
+
+		body.dark-theme .nav-bar,
+		body.dark-theme .content-section,
+		body.dark-theme .footer,
+		body.dark-theme .home-section {
+			background-color: #1e1e1e;
+			color: #f4f4f4;
+		}
+
+		body.dark-theme .nav-bar a {
+			color: #fff;
+		}
+
+		/* Buttons and interactive elements in dark mode */
+		body.dark-theme .button,
+		body.dark-theme input[type="submit"],
+		body.dark-theme input[type="reset"],
+		body.dark-theme .project-link {
+			background-color: #333;
+			color: #f4f4f4;
+		}
+		
+		body.dark-theme .about-me-section {
+			background-color: #1e1e1e;
+		}
+
+		body.dark-theme .about-heading,
+		body.dark-theme .skills-heading,
+		body.dark-theme .interests-heading {
+			color: #f4f4f4;
+		}
+
+		body.dark-theme .about-paragraph,
+		body.dark-theme .skills-list,
+		body.dark-theme .interests-paragraph {
+			color: #ccc;
+		}
+
+		body.dark-theme .skills-box {
+			background-color: #2a2a2a;
+			box-shadow: 0 4px 8px rgba(255, 255, 255, 0.05);
+		}
+
+
+		body.dark-theme .button:hover,
+		body.dark-theme input[type="submit"]:hover,
+		body.dark-theme input[type="reset"]:hover {
+			background-color: #555;
+		}
+
+		/* Text color overrides for dark mode */
+		body.dark-theme label,
+		body.dark-theme input,
+		body.dark-theme textarea {
+			color: #ddd;
+			background-color: #222;
+			border-color: #444;
+		}
+		
+	</style>
+</head>
+<body class="light-theme">
+	<!-- Theme toggle switch -->
+	  <div class="theme-toggle">
+	  <input type="checkbox" id="theme-switch" />
+	  <label for="theme-switch" class="switch-label">
+		<span class="switch-slider"></span>
+	  </label>
+	</div>
+  
+    <!-- Logo Section -->
+    <header class="logo">
+        <img src="https://raw.githubusercontent.com/lax-2020com69/Home/refs/heads/main/Home/luxury-letter-l-logo-l-logotype-for-elegant-and-stylish-fashion-symbol-vector.jpg" alt="Game Logo" />
+    </header>
+    <!-- Navigation Bar -->
+    <nav class="nav-bar">
+        <a href="#Home">Home</a>
+        <a href="#Projects">Projects</a>
+        <a href="#About">About</a>
+        <a href="#Contact">Contact</a>
+    </nav>
+
+    <!-- Main Content Sections -->
+    <section class="home-section" id="Home">
+        <h1>
+            <div class="wrapper">
+                <p class="text">Hello, I'm Laxman</p>
+            </div>
+        </h1>
+        <p>Welcome to my portfolio. I'm a dedicated Software Engineer specializing in Full-Stack and Mobile Development, passionate about building clean, scalable, and user-focused digital experiences.</p>
+        <div class="intro">
+            <img src="https://raw.githubusercontent.com/lax-2020com69/Home/refs/heads/main/Home/profile.jpg" alt="Laxman">
+            <p>I specialize in front-end development, UI/UX design, and crafting intuitive, responsive digital experiences. With a strong foundation in both web and mobile technologies, I strive to deliver seamless user interfaces and performant applications.</p>
+        </div>
+        <div class="social-icons">
+            <a href="https://github.com/lax-2020com69" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/laxman6400" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:laxmanlax6400@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+    </section>
+    <section id="Projects" class="content-section">
+        <!--h2>Projects</h2-->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <img src="https://raw.githubusercontent.com/lax-2020com69/Home/refs/heads/main/Home/img/stopwatch.png" alt="Project 1" class="project-img">
+            <a href="https://github.com/lax-2020com69/Stop-Watch-react" target="_blank" class="project-link">View Project 1</a>
+        </div>
+        <div class="project">
+            <img src="https://raw.githubusercontent.com/lax-2020com69/Calculator-App/refs/heads/main/img/Calculator.png" alt="Project 2" class="project-img">
+            <a href="https://github.com/lax-2020com69/Calculator-App" target="_blank" class="project-link">View Project 2</a>
+        </div>
+        <div class="project">
+            <img src="https://raw.githubusercontent.com/lax-2020com69/Home/refs/heads/main/Home/img/Screenshot%202024-12-06%20225408.png" alt="Project 3" class="project-img">
+            <a href="https://github.com/lax-2020com69/Time" target="_blank" class="project-link">View Project 3</a>
+        </div>
+        <div class="project">
+            <img src="https://raw.githubusercontent.com/lax-2020com69/Home/refs/heads/main/Home/img/Screenshot%202024-12-06%20225928.png" alt="Project 4" class="project-img">
+            <a href="https://github.com/lax-2020com69/Glass_container_Atm_Id" target="_blank" class="project-link">View Project 4</a>
+        </div>
+        <div class="project">
+            <img src="https://raw.githubusercontent.com/lax-2020com69/vs-code-clone/refs/heads/main/vs-code-clone/img/vs-code-clone.png" alt="Project 5" class="project-img">
+            <a href="https://github.com/lax-2020com69/vs-code-clone" target="_blank" class="project-link">View Project 5</a>
+        </div>
+        <div class="project">
+            <img src="https://raw.githubusercontent.com/lax-2020com69/To-Do-App/refs/heads/main/img/TO-DO-App.png" alt="Project 6" class="project-img">
+            <a href="https://github.com/lax-2020com69/To-Do-App" target="_blank" class="project-link">View Project 6</a>
+        </div>
+		<div class="project">
+            <img src="https://raw.githubusercontent.com/lax-2020com69/2048/refs/heads/main/img/2048_Game_1.png" alt="Project 6" class="project-img">
+            <a href="https://github.com/lax-2020com69/2048" target="_blank" class="project-link">View Project 7</a>
+        </div>
+    </section>
+        <!-- Add project content here -->
+    </section>
+
+    <section id="About" class="content-section">
+		<h2>About</h2>
+
+		<section id="about-me" class="about-me-section">
+			<div class="about-container">
+				<h2 class="about-heading">About Me</h2>
+				<p class="about-paragraph">
+					Hi, I'm Laxman - a passionate Computer Science student with a strong focus on web development.
+					I thrive on solving complex problems and enjoy turning ideas into innovative, user-friendly software solutions.
+					My goal is to build impactful digital experiences through clean code and thoughtful design.
+				</p>
+
+				<!-- Skills List -->
+				<div class="skills-wrapper">
+					<div class="skills-box">
+						<h3 class="skills-heading">Skills</h3>
+						<ul class="skills-list">
+						  <li>
+							<strong>Core Technologies:</strong><br>
+							<div class="tech-logos">
+							  <div class="tech-item">
+								<img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML5" width="40" />
+								<span>HTML5</span>
+							  </div>
+							  <div class="tech-item">
+								<img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS3" width="40" />
+								<span>CSS3</span>
+							  </div>
+							  <div class="tech-item">
+								<img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript" width="40" />
+								<span>JavaScript</span>
+							  </div>
+							  <div class="tech-item">
+								<img src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" alt="PHP" width="40" />
+								<span>PHP</span>
+							  </div>
+							  <div class="tech-item">
+								<img src="https://www.python.org/static/community_logos/python-logo.png" alt="Python" width="40" />
+								<span>Python</span>
+							  </div>
+							  <div class="tech-item">
+								<img src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg" alt="Java" width="40" />
+								<span>Java</span>
+							  </div>
+							  <div class="tech-item">
+								<img src="https://isocpp.org/assets/images/cpp_logo.png" alt="C++" width="40" />
+								<span>C++</span>
+							  </div>
+							</div>
+						  </li>
+
+						  <li>
+							<strong>Front-End & UI Frameworks:</strong><br>
+							<div class="tech-logos">
+							  <div class="tech-item">
+								<img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React.js" width="40" />
+								<span>React.js</span>
+							  </div>
+							  <div class="tech-item">
+								<img src="https://reactnative.dev/img/header_logo.svg" alt="React Native" width="40" />
+								<span>React Native</span>
+							  </div>
+							  <div class="tech-item">
+								<img src="https://images-cdn.openxcell.com/wp-content/uploads/2024/07/25075538/flutter-inner.svg" alt="Flutter" width="40" />
+								<span>Flutter</span>
+							  </div>
+							  <div class="tech-item">
+								<!-- UI/UX Design has no official logo, using a generic design icon -->
+								<img src="https://uiuxdesign.com/images/favicon.ico" alt="UI/UX Design" width="40" />
+								<span>UI/UX Design</span>
+							  </div>
+							  <div class="tech-item">
+								<!-- Responsive Design no official logo; using generic icon -->
+								<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Responsive_Web_Design_Logo.svg/768px-Responsive_Web_Design_Logo.svg.png?20120911140818" alt="Responsive Design" width="40" />
+								<span>Responsive Design</span>
+							  </div>
+							</div>
+						  </li>
+
+						  <li>
+							<strong>Back-End & Databases:</strong><br>
+							<div class="tech-logos">
+							  <div class="tech-item">
+								<img src="https://upload.wikimedia.org/wikipedia/en/d/dd/MySQL_logo.svg" alt="MySQL" width="40" />
+								<span>MySQL</span>
+							  </div>
+							  <div class="tech-item">
+								<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/1200px-MongoDB_Logo.svg.png" alt="MongoDB" width="40" />
+								<span>MongoDB</span>
+							  </div>
+							</div>
+						  </li>
+
+						  <li>
+							<strong>Tools & Platforms:</strong><br>
+							<div class="tech-logos">
+							  <div class="tech-item">
+								<img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg" alt="Git" width="40" />
+								<span>Git</span>
+							  </div>
+							  <div class="tech-item">
+								<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="40" />
+								<span>GitHub</span>
+							  </div>
+							  <div class="tech-item">
+								<img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" alt="Visual Studio Code" width="40" />
+								<span>VS Code</span>
+							  </div>
+							</div>
+						  </li>
+
+						  <li>
+							<strong>Areas of Interest:</strong><br>
+							<div class="tech-logos">
+							  <div class="tech-item">
+								<!-- AI icon placeholder -->
+								<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Dall-e_3_%28jan_%2724%29_artificial_intelligence_icon.png/250px-Dall-e_3_%28jan_%2724%29_artificial_intelligence_icon.png" alt="Artificial Intelligence" width="40" />
+								<span>AI</span>
+							  </div>
+							  <div class="tech-item">
+								<!-- Web development generic icon -->
+								<img src="https://minio.production.cloudplatform.tech/scalable-pages/2022/12/wmA0aPcR-developing.svg" alt="Web Development" width="40" />
+								<span>Web Dev</span>
+							  </div>
+							</div>
+						  </li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Personal Interests -->
+				<div class="personal-interests">
+					<h3 class="interests-heading">Personal Interests</h3>
+					<p class="interests-paragraph">
+						Apart from coding, I enjoy <strong>listening to music</strong> and practicing <strong>karate</strong>.
+						These activities help me stay creative, focused, and maintain a healthy work-life balance.
+					</p>
+				</div>
+			</div>
+		</section>
+	</section>
+
+
+    <section id="Contact" class="content-section">
+        <h2>Contact</h2>
+			 <center>
+                    <h2 style="color:#fff875">Contact Info:</h2>
+				 <label for="name"><span class="fa fa-user"></span> Name:T.Laxman.</label><br>
+				 <label for="email"><span class="fa fa-envelope"></span> Email:laxmanlax6400@gmail.com.</label><br>
+				 <label for="country"><span class="fas fa-location-dot"></span> Country:Trincomalee,Sri Lanka.</label><br>
+                 <img src="https://raw.githubusercontent.com/lax-2020com69/Home/refs/heads/main/Home/profile.jpg" 
+                 width="190px" height="230px" alt="profile-img" id="imgcont" 
+                 style="border-radius: 20px; border-color:#666;
+                 border-style:none;border:1.5px solid black;
+                 user-select: none;
+                 box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.3);"/>
+			</center>
+        <!-- Add contact content here -->
+        <h1>Contact Us</h1><br/>
+        <form action="#" method="POST" id="contactForm">
+            <label for="name" class="fa fa-user"> Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+    
+            <label for="email" class="fa fa-envelope"> Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+    
+            <label for="phone" class="fas fa-phone"> Phone:</label><br>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890"><br><br>
+    
+            <label for="message" class="fas fa-comment"> Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+			
+            <input type="reset" value="Reset">
+			<input type="submit" value="Submit">
+			
+        </form>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <h2>Get In Touch</h2>
+		<p>I'm currently looking to join a new team of creative designerss and developers.</p>
+		<p>If you have good opportunity that matches my Skills and experiences then don't hesitate to contact me.</p>
+		<p>Designed and Developed By</p>
+        <br/>
+        <a href="./My-CV-Laxman Thavenderan.pdf" target="_blank" download>
+			<button class="button"><span>Laxman</span></button>
+		</a>
+
+    </footer>
+	<script src="./script.js"></script>
+	<script>
+		  const toggle = document.getElementById("theme-switch");
+		  const body = document.body;
+		  const faviconLight = document.getElementById("favicon-light");
+		  const faviconDark = document.getElementById("favicon-dark");
+
+		  // Apply stored theme on load
+		  const savedTheme = localStorage.getItem("theme");
+		  if (savedTheme === "dark") {
+			toggle.checked = true;
+			body.classList.add("dark-theme");
+			faviconLight.disabled = true;
+			faviconDark.disabled = false;
+		  }
+
+		  // Toggle theme and favicon on switch
+		  toggle.addEventListener("change", () => {
+			if (toggle.checked) {
+			  body.classList.add("dark-theme");
+			  localStorage.setItem("theme", "dark");
+			  faviconLight.disabled = true;
+			  faviconDark.disabled = false;
+			} else {
+			  body.classList.remove("dark-theme");
+			  localStorage.setItem("theme", "light");
+			  faviconLight.disabled = false;
+			  faviconDark.disabled = true;
+			}
+		  });
+	</script>
+
+</body>
+</html>
