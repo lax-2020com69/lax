@@ -396,25 +396,14 @@
 		  const faviconLight = document.getElementById("favicon-light");
 		  const faviconDark = document.getElementById("favicon-dark");
 
-		  // Apply stored theme on load
-		  const savedTheme = localStorage.getItem("theme");
-		  if (savedTheme === "dark") {
-			toggle.checked = true;
-			body.classList.add("dark-theme");
-			faviconLight.disabled = true;
-			faviconDark.disabled = false;
-		  }
-
 		  // Toggle theme and favicon on switch
 		  toggle.addEventListener("change", () => {
 			if (toggle.checked) {
 			  body.classList.add("dark-theme");
-			  localStorage.setItem("theme", "dark");
 			  faviconLight.disabled = true;
 			  faviconDark.disabled = false;
 			} else {
 			  body.classList.remove("dark-theme");
-			  localStorage.setItem("theme", "light");
 			  faviconLight.disabled = false;
 			  faviconDark.disabled = true;
 			}
